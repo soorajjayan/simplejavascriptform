@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <title>BMW SAMBLE WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet"  href="files/bootstrap.min.css">
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/jquery.min.js"></script>
+	<script src="files/popper.min.js"></script>
+</head>
+<body>
+    <section>
+
+    	<header>
+    	
+        <div class="container">
+        	<div class="circle"></div>
+
+            <a href="#" class="logo"><img src="images/th.jpg"></a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Whats new</a>
+                
+            </nav>
+        </div>
+        </header>
+
+        <div class="banner-container">
+        	<div class="container">
+        	<div class="left-section">
+        		<h2>its jzt smaple website of bmw<br>it,s  <span> BMW </span></h2>
+        			<P>ayerische Motoren Werke AG, commonly referred to as BMW , is a German multinational corporation which produces luxury vehicles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945. Automobiles are marketed under the brands BMW</P>
+        			<a href="#">Learn More</a>
+
+        		</div>
+
+        		
+
+        		<div class="imgbox">
+				<img src="images/download.jpg" class="bmw">
+
+        		
+        	 </div>
+        	 <ul class="thump">
+        	 	<li><img src="images/OIP (1).jpg" onmouseover="imgSlider('images/OIP (1).jpg');changeCircleColor('#D70004')"></li>
+        	 		<li><img src="images/OIP (2).jpg" onmouseover="imgSlider('images/OIP (2).jpg');changeCircleColor('#58BDDC')"></li>
+        	 			<li><img src="images/download.jpg" onmouseover="imgSlider('images/download.jpg');changeCircleColor('#477B27')"></li>
+        	 		</ul>
+
+        	 	<ul class="sci">
+        	 		<li><a href="#"><img src="images/facebook.jpg"></a></li>
+        	 		<li><a href="#"><img src="images/insta.jpg"></a></li>
+        	 		<li><a href="#"><img src="images/twiter.jpg"></a></li>
+        	 	</ul>
+
+
+    </section>
+</body>
+<script type="text/javascript">
+	function imgSlider(anything){
+		document.querySelector('.bmw').src = anything;
+	}
+
+	function changeCircleColor(color){
+		const circle =document.querySelector('.circle');
+		circle.style.background =color;
+	}
+</script>
+
+</body>
+</html>
